@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    font-size: 2rem;
+    justify-content: space-around;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.logo {
+    width: 33%;
+    max-width: 14rem;
+}
+
+.toggle{
+    list-style-type: none;
+    align-self: center;
+    text-align: right;
+    margin-right: 2rem;
+    width: 3rem;
+    font-size: 3rem;
+    flex: 1;
+}
+
+.item{
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.item.button.secundary::after{
+    content: " ";
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-bottom: solid 0.2px rgb(228, 228, 228);
+    display: block;
+}
+
+

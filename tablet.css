@@ -1,0 +1,38 @@
+.menu{
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    order: 0;
+    flex: 1;
+    /* max-width: none; */
+}
+
+.item.button{
+    width: auto;
+    display: inline-block;
+    order: 1;
+    border: solid 1px gold;
+}
+
+.item.button.secundary::after{
+    content: none;
+}
+
+.item.button.primary{
+    background-color: gold;
+}
+
+.toggle{
+    display: inline-block;
+    order: 2;
+    flex: 1;
+    max-width: 140px;
+}
+
+.item{
+    order: 3;
+}
+
+
