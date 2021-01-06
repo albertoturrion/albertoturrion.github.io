@@ -1,6 +1,9 @@
+
 .menu{
-    grid-template-columns: repeat(auto, 1fr);
+    max-width: 1200px;
+    grid-template-columns: repeat(9, 1fr) 2fr 2fr;
     grid-template-rows: 1fr;
+    margin: 0 auto;
 }
 
 .toggle{
@@ -8,7 +11,23 @@
 }
 
 .logo{
+    grid-column: span 3;
 }
 
-.
+.item.button.primary{
+    grid-column: -2 / -3;
+    justify-self: center;
+}
 
+.item.button.secundary{
+    grid-column: -1 / -2;
+    justify-self: center;
+}
+
+.item{
+    grid-column: span 1;
+}
+
+.item:hover{
+    background-color: var(--button-color);
+}

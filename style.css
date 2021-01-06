@@ -21,10 +21,13 @@ img{
     width: 100%;
 }
 
+nav{
+    background-color: black;
+}
+
 .menu{
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
     font-size: 2rem;
     justify-content: space-around;
 }
