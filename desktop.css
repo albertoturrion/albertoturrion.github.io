@@ -4,6 +4,7 @@
     grid-template-columns: repeat(9, 1fr) 2fr 2fr;
     grid-template-rows: 1fr;
     margin: 0 auto;
+    gap: 0 0.5rem;
 }
 
 .toggle{
@@ -26,6 +27,7 @@
 
 .item{
     grid-column: span 1;
+    display: block;
 }
 
 .item:hover{

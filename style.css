@@ -55,10 +55,15 @@ nav{
 
 .item{
     list-style-type: none;
-    display: block;
+    display: none;
     width: 100%;
     padding: 1rem;
     text-align: center;
+}
+
+
+.active{
+    display: block;
 }
 
 .item.button.secundary::after{
