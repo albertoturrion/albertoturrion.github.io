@@ -1,5 +1,8 @@
 :root{
     --button-color: #c5af19;
+    --h1-font-size: 2.8rem;
+    --h2-font-size: 2.2rem;
+    --h3-font-size: 2.0rem;
 }
 
 *{
@@ -15,6 +18,21 @@ html{
 body{
     font-size: 1.6rem;
     font-family: 'Nunito Sans', sans-serif;
+}
+
+h1{
+    font-size: var(--h1-font-size);
+    line-height: 1.5;
+}
+
+h2{
+    font-size: var(--h2-font-size);
+    line-height: 1.5;
+}
+
+h3{
+    font-size: var(--h3-font-size);
+    line-height: 1.5;
 }
 
 img{
@@ -75,4 +93,67 @@ nav{
     margin: 0 auto;
 }
 
+/* Main  */
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.main-home-page h1{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.main-home-page h2{
+    margin: 0.8rem 0;
+    display: inline-block;
+}
+
+.main-home-page h2::after{
+    content: " ";
+    display: block;
+    margin-bottom: 5px;
+    border: 0.5px solid var(--button-color);
+    width: 100%;
+}
+
+.grid-container{
+    display: grid;
+    gap: 1rem 0.5rem;
+    grid-template-columns: repeat(5, 300px);
+    overflow: scroll;
+    padding-left: 1rem;
+    margin: 10px 0;
+}
+
+.box{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.box img{
+    vertical-align: top;
+    border-radius: inherit;
+}
+
+.box__overlay{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(197, 175, 25,0.5);
+    padding: 0.5rem;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.box:hover .box__overlay{
+    opacity: 1;
+}
 

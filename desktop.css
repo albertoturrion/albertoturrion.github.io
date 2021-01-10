@@ -33,3 +33,10 @@
 .item:hover{
     background-color: var(--button-color);
 }
+
+/* main */
+
+.grid-container{
+    grid-template-columns: repeat(5, 500px);
+    padding-left: 2rem;
+}
